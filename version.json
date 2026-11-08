@@ -1,7 +1,7 @@
 {
-  "version": "4.9.0",
-  "build": 4900,
-  "name": "RubyOS 4.9.0",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.0.html",
-  "changelog": "Rubytube removed, mini menu, OS-wide color, Developer Options, Terminal sudo root ruby fix, Slides real Present mode, Clock timer hours, Notes See All + Trash, Forms fully rebuilt, Drive fixed - files open + rename, Minesweeper Play Again, Flap Bird difficulties + Space fix, Runner spacing fix, Earth Street View removed + Terrain fixed + Locate Me fallback, taskbar Forms + Settings open."
+  "version": "4.9.1",
+  "build": 4901,
+  "name": "RubyOS 4.9.1",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.1.html",
+  "changelog": "Setup Wizard (Welcome, Language, Keyboard, Username, Password optional, then Lock screen). Developer RubyOS: tapping build 7 times now restarts into Developer mode with Welcome Developer boot + desktop watermark, Terminal auto-rooted, sudo disable/enable apps, Developer Settings disable toggles, Custom App File into the Ruby Store + .rubyapp export/import. Permissions: Location now has Ask to grant + explains Earth IP fallback, Motion sensors shows No hardware on Chromebooks, USB notes the built-in webcam is normal."
 }
