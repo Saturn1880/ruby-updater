@@ -1,0 +1,7 @@
+{
+  "version": "4.8.6",
+  "build": "4806",
+  "name": "RubyOS",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.8.6.html",
+  "changelog": "Ruby Updater repo name - the online update repository is now called ruby-updater."
+}
