@@ -1,7 +1,7 @@
 {
-  "version": "4.8.7",
-  "build": "4807",
+  "version": "4.8.8",
+  "build": "4808",
   "name": "RubyOS",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.8.7.html",
-  "changelog": "Built-in Ruby Updater - your server is already filled in, and Check for updates downloads the update by itself."
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.8.8.html",
+  "changelog": "In-place updates - Check for updates shows a RubyOS is updating screen and switches to the new version right in the same tab."
 }
