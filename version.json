@@ -1,7 +1,7 @@
 {
-  "version": "4.8.9",
-  "build": "4809",
-  "name": "RubyOS",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.8.9.html",
-  "changelog": "Rubytube search fix - search now shows real results inside the app. Tap one to play."
+  "version": "4.9.0",
+  "build": 4900,
+  "name": "RubyOS 4.9.0",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.0.html",
+  "changelog": "Rubytube removed, mini menu, OS-wide color, Developer Options, Terminal sudo root ruby fix, Slides real Present mode, Clock timer hours, Notes See All + Trash, Forms fully rebuilt, Drive fixed - files open + rename, Minesweeper Play Again, Flap Bird difficulties + Space fix, Runner spacing fix, Earth Street View removed + Terrain fixed + Locate Me fallback, taskbar Forms + Settings open."
 }
