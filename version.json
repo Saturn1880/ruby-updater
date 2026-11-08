@@ -1,7 +1,7 @@
 {
-  "version": "4.8.8",
-  "build": "4808",
+  "version": "4.8.9",
+  "build": "4809",
   "name": "RubyOS",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.8.8.html",
-  "changelog": "In-place updates - Check for updates shows a RubyOS is updating screen and switches to the new version right in the same tab."
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.8.9.html",
+  "changelog": "Rubytube search fix - search now shows real results inside the app. Tap one to play."
 }
