@@ -1,7 +1,7 @@
 {
-  "version": "4.9.4",
+  "version": "4.9.5",
   "build": 4904,
-  "name": "RubyOS 4.9.4",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.4.html",
+  "name": "RubyOS 4.9.5",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.5.html",
   "changelog": "FIXED: Notes See All / Trash / checkboxes / Delete (code was trapped inside a leaflet script tag and never ran). FIXED: Forms (was fully dead) and Slides Present (was an alert). Home screen now shows ALL apps (was capped at 10) on a full-screen grid. VM Manager App #18 rebuilt in full Ruby theme, multi-VM, working Settings + Discard, Exit Boot Screen button, and its VM logo is now the home-screen icon."
 }
