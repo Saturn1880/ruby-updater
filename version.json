@@ -1,7 +1,7 @@
 {
-  "version": "4.9.2",
-  "build": 4902,
-  "name": "RubyOS 4.9.2",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.2.html",
-  "changelog": "Community Apps in the Ruby Store, powered by GitHub Pages: the Store now loads a shared catalog (apps.json) so every RubyOS user sees community apps and can install them with one tap. Developer Options: Publish to GitHub Pages card + Copy GitHub entry button that copies the exact JSON to paste into apps.json."
+  "version": "4.9.4",
+  "build": 4904,
+  "name": "RubyOS 4.9.4",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.4.html",
+  "changelog": "FIXED: Notes See All / Trash / checkboxes / Delete (code was trapped inside a leaflet script tag and never ran). FIXED: Forms (was fully dead) and Slides Present (was an alert). Home screen now shows ALL apps (was capped at 10) on a full-screen grid. VM Manager App #18 rebuilt in full Ruby theme, multi-VM, working Settings + Discard, Exit Boot Screen button, and its VM logo is now the home-screen icon."
 }
