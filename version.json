@@ -1,7 +1,7 @@
 {
-  "version": "4.9.4",
-  "build": 4904,
-  "name": "RubyOS 4.9.4",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.4.html",
-  "changelog": "FIXED: Notes See All / Trash / checkboxes / Delete (code was trapped inside a leaflet script tag and never ran). FIXED: Forms (was fully dead) and Slides Present (was an alert). Home screen now shows ALL apps (was capped at 10) on a full-screen grid. VM Manager App #18 rebuilt in full Ruby theme, multi-VM, working Settings + Discard, Exit Boot Screen button, and its VM logo is now the home-screen icon."
+  "version": "4.9.6",
+  "build": 4906,
+  "name": "RubyOS 4.9.6",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.6.html",
+  "changelog": "NEW: Ruby Virtual Machine Manager is built in - no Store install needed. App menu (Start) is now as wide as your display, and taller in fullscreen. Desktop icons auto-declutter on boot (no more stacked icons). Games: tapping a game hides the launcher and shows the game with a red X to go back - in every game. Runner: Easy/Medium/Hard, double obstacles, flying birds to duck under (Down/S to crouch), animated runner. Pong: Easy (AI only hits ~20%), Medium, Impossible. Pathweaver: full How to Play instructions. Terminal: Downloads/Desktop/Pictures/Documents now show your real Notes, Docs, Drive files and apps - use ls / tree / open."
 }
