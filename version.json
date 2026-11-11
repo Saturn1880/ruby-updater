@@ -1,6 +1,6 @@
 {
-  "version": "4.9.9",
-  "build": "4909",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.9.html",
-  "changelog": "Ruby Isle fix: 2 ruby ores were buried inside Frostpeak mountain and could not be mined - moved them to reachable spots. Everything else is the same as 4.9.8."
+  "version": "4.9.10",
+  "build": "4910",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.10.html",
+  "changelog": "EMERGENCY FIX: the 'You're now on RubyOS' pop-up buttons (Save as file + Got it) did not work on phones. The pop-up now renders in the top document with touch handlers, and Save uses the iOS Share Sheet on iPhone. Also includes the Ruby Isle ore fix from 4.9.9."
 }
