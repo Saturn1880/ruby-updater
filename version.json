@@ -1,7 +1,6 @@
 {
-  "version": "4.9.6",
-  "build": 4906,
-  "name": "RubyOS 4.9.6",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.6.html",
-  "changelog": "NEW: Ruby Virtual Machine Manager is built in - no Store install needed. App menu (Start) is now as wide as your display, and taller in fullscreen. Desktop icons auto-declutter on boot (no more stacked icons). Games: tapping a game hides the launcher and shows the game with a red X to go back - in every game. Runner: Easy/Medium/Hard, double obstacles, flying birds to duck under (Down/S to crouch), animated runner. Pong: Easy (AI only hits ~20%), Medium, Impossible. Pathweaver: full How to Play instructions. Terminal: Downloads/Desktop/Pictures/Documents now show your real Notes, Docs, Drive files and apps - use ls / tree / open."
+  "version": "4.9.9",
+  "build": "4909",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.9.html",
+  "changelog": "Ruby Isle fix: 2 ruby ores were buried inside Frostpeak mountain and could not be mined - moved them to reachable spots. Everything else is the same as 4.9.8."
 }
