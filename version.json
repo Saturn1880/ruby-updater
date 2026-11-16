@@ -1,8 +1,8 @@
 {
-  "version": "4.9.15",
-  "build": "4915",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.15.html",
+  "version": "4.9.16",
+  "build": "4916",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.16.html",
   "changelog": [
-    "4.9.15 (Build 4915): FIXED Check for updates could not see update - bootloader build fixed to 4915, updater now tries saved URL + raw GitHub + GitHub Pages and shows which URL and error, clear message if HTML file not uploaded yet, Reset update server URL button, saved non-version.json URLs ignored."
+    "4.9.16 (Build 4916): TEMP SHUTDOWN - Messages + Phone show Temporarily Closed until Wyatt gets code in. No fake replies, no fake Connected. Messages now go through GitHub ruby-messages.json with name + number + message when re-enabled. Phone sends real call invite through same relay when re-enabled. Ideas cleaned to ruby-only, 17 skipped, 293 kept."
   ]
 }
