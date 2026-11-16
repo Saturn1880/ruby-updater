@@ -1,7 +1,8 @@
 {
-  "version": "4.9.13",
-  "build": 4913,
-  "name": "RubyOS 4.9.13",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.13.html",
-  "changelog": "Setup Wizard (Welcome, Language, Keyboard, Username, Password optional, then Lock screen). Developer RubyOS: tapping build 7 times now restarts into Developer mode with Welcome Developer boot + desktop watermark, Terminal auto-rooted, sudo disable/enable apps, Developer Settings disable toggles, Custom App File into the Ruby Store + .rubyapp export/import. Permissions: Location now has Ask to grant + explains Earth IP fallback, Motion sensors shows No hardware on Chromebooks, USB notes the built-in webcam is normal."
+  "version": "4.9.15",
+  "build": "4915",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.15.html",
+  "changelog": [
+    "4.9.15 (Build 4915): FIXED Check for updates could not see update - bootloader build fixed to 4915, updater now tries saved URL + raw GitHub + GitHub Pages and shows which URL and error, clear message if HTML file not uploaded yet, Reset update server URL button, saved non-version.json URLs ignored."
+  ]
 }
