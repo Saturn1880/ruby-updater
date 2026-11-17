@@ -1,0 +1,410 @@
+RubyOS - Ideas - Ruby Theme Only
+================================
+
+Theme - use ONLY these colors:
+- Deep Crimson #990000
+- Ruby Red #E0115F
+- Metallic Rose Gold
+- Charcoal Grey
+- Obsidian Black
+No blue, no green, no yellow, no purple, no sapphire, no emerald, no other gem colors.
+
+Who made what:
+- Gemini made the first set: 150 game ideas + 150 app ideas. Gemini did NOT get the ruby theme, so those ideas had other gem colors in them. Same fix applies: replace any non-ruby color with the ruby theme above.
+- Grok made the 310 ideas below. This file is the Grok 310, cleaned to ruby-only.
+
+What was fixed in this file:
+- Every "crystal", "gem", "gemstone", "facet", "sapphire", "emerald" changed to "ruby" / "rubies" / "ruby-cut".
+- Example: "crystal-edged" -> "ruby-edged", "gem-shaped" -> "ruby-shaped", "Crystal Mode" -> "Ruby Glass Mode".
+- Skipped 17 ideas that already exist in RubyOS 4.9.15. Kept 293 new ideas.
+
+==================================================
+ORIGINAL CORE IDEAS - Ruby Theme Only
+==================================================
+
+Vision
+RubyOS: A fast, beautiful, developer-friendly operating system focused on customization, security, and AI assistance, featuring a ruby-inspired interface and built-in creative tools.
+
+A ruby-themed operating system that stands out through ruby aesthetics, deep customization, strong security, native developer tools, and built-in AI assistance.
+
+Unique Design Ideas
+- Ruby-themed UI: Windows and menus look like rubies only - Deep Crimson, Ruby Red, Rose Gold, Charcoal Grey, Obsidian Black.
+- Animated desktop that changes ruby shade based on CPU usage or time of day.
+- Transparent "Ruby Glass Mode" with glass effects in ruby colors only.
+- Retro Mode that switches the whole OS to a 1990s computer look, but kept in ruby colors.
+
+Cool Features
+- Universal Command Palette (Alt + Space) for launching apps, searching files, doing calculations, and controlling settings.
+- AI Assistant built in for file management, coding help, and system control.
+- Workspace Islands: Multiple desktops represented as floating ruby islands.
+- Smart App Grouping: Automatically organize apps by category.
+
+Developer Features
+- Native Ruby language integration (fits the name perfectly).
+- Built-in code editor.
+- Terminal with rich graphics support.
+- Package manager called Ruby Store (already exists - do not make a second one).
+- One-click app sandboxing.
+
+Security Ideas
+- Permission dashboard showing exactly what apps access. [Already have Permissions app - keep improving it, do not duplicate.]
+- "Disposable Apps" that reset after closing.
+- Security score for installed programs.
+- Encrypted user folders by default.
+
+Gaming Features
+- Lightweight "Game Mode."
+- Performance overlays built into the OS.
+- Dynamic resource allocation for games.
+- Simple game-development toolkit included.
+
+File System Concepts
+- File system named RubyFS.
+- Tag-based organization instead of only folders.
+- Instant snapshots and rollback.
+- Visual timeline of file history.
+
+Futuristic Concepts
+- Voice-controlled desktop.
+- Modular OS where users install only the components they need.
+- AI-generated ruby themes (ruby colors only).
+- "Living Desktop" with ruby widgets that interact with each other.
+
+RubyOS Exclusive Apps (Original) - already exist, do not remake:
+- Ruby Browser - already have Browser
+- Ruby Studio (code editor) - not yet, this one is NEW, keep it
+- Ruby Music - already have it
+- Ruby Paint - already have it
+- Ruby Cloud - not yet, this one is NEW, keep it
+- Ruby Terminal - already have it
+- Ruby Defender (security center) - not yet, this one is NEW, keep it
+
+Fun Gimmicks
+- Boot screen showing a ruby forming.
+- Achievement system for learning features.
+- Easter eggs hidden throughout the OS.
+- Desktop pets powered by the system AI, in ruby colors only.
+
+==================================================
+KEPT IDEAS - 293 NEW (Grok 310, ruby-only, skipped ones removed)
+==================================================
+Original numbers kept so you can match them back to the Grok list.
+
+2. Ruby Canvas – digital painting with ruby-cut brush tools
+3. Ruby Code – lightweight IDE with ruby-syntax highlighting and ruby-shaped breakpoints
+4. Ruby Mail – email client with glowing ruby status indicators
+6. Ruby Tasks – task manager where completed items “cut” into polished rubies
+7. Ruby Draw – vector illustration tool with ruby shape library
+9. Ruby Photo – photo editor featuring “ruby polish” filters and ruby cut crops
+10. Ruby Writer – distraction-free writing app with glowing cursor rubies
+12. Ruby Present – presentation tool with ruby slide transitions
+13. Ruby Mind – mind-mapping app where nodes are polished rubies
+14. Ruby Board – digital whiteboard with ruby sticky notes
+15. Ruby Focus – pomodoro timer shaped like a rotating ruby
+16. Ruby Vault – password manager with multi-ruby-cut encryption visualization
+17. Ruby Scan – document scanner that turns pages into ruby-sharp digital rubies
+18. Ruby Translate – translator with ruby-language flags
+19. Ruby Voice – voice memo app that visualizes speech as ruby waveforms
+20. Ruby Journal – private journal with daily ruby mood entries
+21. Ruby Budget – finance tracker where money is represented as growing rubies
+22. Ruby Habit – habit tracker that grows a ruby garden as streaks continue
+23. Ruby Recipe – cooking app with ruby difficulty ratings
+24. Ruby Fitness – workout tracker with ruby progress rubies
+25. Ruby Sleep – sleep tracker that shows sleep quality as ruby clarity
+27. Ruby Maps – mapping app with ruby location pins
+28. Ruby News – news reader with ruby “breaking” animations
+29. Ruby Podcast – podcast player with ruby-shaped episode markers
+30. Ruby Radio – internet radio with ruby frequency dials
+33. Ruby Converter – unit converter with ruby transformation animations
+34. Ruby QR – QR/barcode scanner that reveals results in ruby frames
+35. Ruby OCR – text recognition that turns scanned text into ruby fonts
+36. Ruby PDF – PDF reader/annotator with ruby highlights
+37. Ruby Archive – file archiver that compresses into “ruby packs”
+38. Ruby Backup – backup tool that creates ruby snapshot spheres
+39. Ruby Sync – cloud sync visualizer showing data as flowing ruby dust
+40. Ruby Share – file sharing with temporary ruby links that “shatter” when expired
+42. Ruby Diagram – flowchart tool using ruby shapes
+43. Ruby Timeline – project timeline with ruby milestone markers
+44. Ruby Kanban – kanban board with ruby columns (To Do = rough, Done = polished)
+45. Ruby Sprint – agile tool with velocity shown as ruby growth
+48. Ruby Survey – survey tool with ruby rating scales
+49. Ruby Poll – quick poll creator with ruby voting animations
+50. Ruby Meeting – meeting notes + AI summary that rubylizes key points
+51. Ruby Brainstorm – idea capture that turns thoughts into floating ruby clusters
+52. Ruby Outline – outlining tool that expands into ruby tree structures
+53. Ruby Research – research organizer with ruby-tagged sources
+54. Ruby Citation – citation manager that formats sources as polished rubies
+55. Ruby Flash – flashcard app with ruby card flips
+56. Ruby Quiz – quiz creator with ruby scoring
+57. Ruby Lesson – lesson planner for educators with ruby progress paths
+58. Ruby Grade – gradebook that shows scores as ruby clarity levels
+59. Ruby Portfolio – portfolio builder with ruby project showcases
+60. Ruby Resume – resume designer with ruby section dividers
+61. Ruby Crush – match-3 with real ruby physics and ruby cut matching
+62. Ruby Quest – adventure RPG where you collect and cut rubies
+65. Ruby cut Puzzle – 3D rotating ruby puzzles
+66. Ruby Solitaire – classic solitaire with ruby cards
+68. Ruby Go – Go board made of polished ruby tiles
+69. Ruby Sudoku – Sudoku with colored ruby numbers
+70. Ruby Mahjong – Mahjong with ruby tiles
+74. Ruby Defense – tower defense using ruby towers
+75. Ruby Farm – farming sim where crops grow into ruby plants
+76. Ruby City – city builder using ruby architecture
+77. Ruby Tycoon – business sim centered on running a ruby mine
+78. Ruby Dungeon – roguelike with procedural ruby caves
+79. Ruby Platformer – precision platformer on floating ruby platforms
+80. Ruby Racer – racing through ruby tunnels
+81. Ruby Fighter – fighting game with ruby-powered special moves
+82. Ruby Strategy – turn-based strategy on a ruby board
+83. Ruby Card Battler – collectible card game with ruby rarity
+84. Ruby Alchemy – combine rubies to create new elements
+85. Ruby Escape – room-escape games set in ruby temples
+87. Ruby Hidden Object – find hidden rubies in detailed ruby scenes
+88. Ruby Sorting – satisfying sorting puzzles by color and cut
+89. Ruby Physics – physics playground with ruby materials
+90. Ruby Sandbox – free-build mode with infinite rubies
+91. Ruby Music Game – rhythm game where notes are ruby strikes
+92. Ruby Dance – dance game with ruby floor tiles
+93. Ruby Sports – mini sports games played on ruby arenas
+94. Ruby Bowling – bowling with ruby pins
+95. Ruby Golf – golf on rubyline courses
+96. Ruby Billiards – pool with ruby balls and table
+97. Ruby Pinball – pinball machine made entirely of rubies
+98. Ruby Pinball Deluxe – multi-table ruby pinball
+99. Ruby Slot – (non-monetary) slot machine with ruby combinations
+100. Ruby Fortune – wheel of fortune with ruby wedges
+101. Ruby Trivia – trivia game with ruby difficulty levels
+102. Ruby Quiz Battle – multiplayer quiz with ruby rewards
+103. Ruby Word Search – word search in ruby letter grids
+104. Ruby Crosswords – crossword puzzles with ruby clues
+105. Ruby Anagram – anagram solver/game with ruby word building
+106. Ruby Hangman – hangman where the figure is a growing ruby
+107. Ruby Spelling – spelling bee style game with ruby rewards
+108. Ruby Math Race – math challenges that race rubies to the finish
+109. Ruby Logic – logic grid puzzles with ruby symbols
+110. Ruby Pattern – pattern recognition and completion games
+111. Ruby Memory Palace – spatial memory training with ruby rooms
+112. Ruby Sequence – Simon-style sequence memory with rubies
+113. Ruby Reaction – reaction-time tests with flashing rubies
+114. Ruby Focus – attention-training games with moving rubies
+115. Ruby Balance – balance physics games with ruby structures
+116. Ruby Tower – build the tallest stable ruby tower
+117. Ruby Domino – falling ruby dominoes
+118. Ruby Chain – chain-reaction ruby puzzles
+119. Ruby Collapse – physics collapse games with ruby structures
+120. Ruby Merge – merge identical rubies to create higher rarities
+121. Ruby Evolve – evolve rough stones into perfect rubies
+122. Ruby Collect – collection game of rare ruby variants
+123. Ruby Museum – virtual ruby museum with interactive exhibits
+124. Ruby Hunt – outdoor AR ruby hunting (if AR support exists)
+125. Ruby Story – interactive story games set in a ruby world
+126. Ruby Legend – narrative adventure about the origin of the first Ruby
+127. Ruby Heroes – hero RPG where powers come from equipped rubies
+128. Ruby Wars – large-scale strategy with ruby factions
+129. Ruby Kingdom – kingdom management with ruby resources
+130. Ruby Empire – 4X-style game focused on ruby trade routes
+131. Ruby Survival – survival in a collapsing ruby world
+132. Ruby Craft – crafting system centered on cutting and setting rubies
+133. Ruby Blacksmith – forge weapons and tools from rubies
+134. Ruby Alchemy Lab – experimental combining of ruby properties
+135. Ruby Labyrinth – endless maze of shifting ruby corridors
+136. Ruby Mirror – mirror-reflection puzzle games
+137. Ruby Light – light-bending and refraction puzzles
+138. Ruby Shadow – shadow and light ruby puzzles
+139. Ruby Gravity – gravity-shifting platformers
+140. Ruby Time – time-manipulation puzzles in ruby temples
+141. Ruby Learn – general learning platform with ruby progress paths
+142. Ruby Math – interactive math lessons with visual ruby proofs
+143. Ruby Science – science experiments visualized with ruby models
+144. Ruby Chemistry – periodic table as interactive rubies
+145. Ruby Physics – physics simulations with ruby materials
+146. Ruby Biology – cell and organ systems shown as living ruby structures
+147. Ruby Astronomy – solar system and stars rendered as giant rubies
+148. Ruby History – historical timelines with ruby era markers
+149. Ruby Geography – interactive maps with ruby country markers
+150. Ruby Languages – language learning with ruby-flashcard system
+151. Ruby Coding – learn programming by building ruby structures
+152. Ruby Python – Python tutorial path themed as ruby cutting
+153. Ruby JavaScript – JS lessons that create interactive ruby web toys
+154. Ruby C++ – systems programming taught through ruby memory models
+155. Ruby Electronics – circuit building with ruby components
+156. Ruby Robotics – introductory robotics with virtual ruby robots
+157. Ruby AI – gentle introduction to AI concepts using ruby analogies
+158. Ruby Data – data science visualized as ruby datasets
+159. Ruby Statistics – probability and stats with ruby dice and distributions
+160. Ruby Logic – formal logic taught through ruby-rule systems
+161. Ruby Philosophy – philosophy discussions framed as polishing ideas into rubies
+162. Ruby Art History – art movements shown through ruby periods
+163. Ruby Music Theory – notes and scales as ruby arrangements
+164. Ruby Composition – music composition tool with ruby instruments
+165. Ruby Drawing School – step-by-step drawing lessons with ruby guidelines
+166. Ruby Painting – painting techniques demonstrated on ruby canvases
+167. Ruby Typography – font design and letter anatomy with ruby letterforms
+168. Ruby Design – graphic design principles using ruby grids
+169. Ruby UX – interface design lessons with ruby component library
+170. Ruby Writing – creative writing prompts that grow into story rubies
+171. Ruby Storytelling – narrative structure taught as ruby cut development
+172. Ruby Poetry – poetry tools with meter visualized as ruby rhythms
+173. Ruby Debate – structured debate practice with ruby argument maps
+174. Ruby Critical Thinking – fallacy detection and reasoning games
+175. Ruby Memory Training – advanced memory techniques with ruby loci
+176. Ruby Speed Reading – reading trainer with ruby progress tracking
+177. Ruby Vocabulary – vocabulary builder that grows a personal ruby lexicon
+178. Ruby Grammar – grammar lessons with ruby sentence diagrams
+179. Ruby Essay – essay structure and feedback with ruby scoring
+180. Ruby Research Skills – how to research properly, shown as ruby mining
+181. Ruby Citation Master – advanced citation and academic integrity
+182. Ruby Study Planner – study schedule that balances subjects as ruby weights
+183. Ruby Flash Master – spaced-repetition system with adaptive ruby difficulty
+184. Ruby Exam Prep – exam simulators with ruby performance analytics
+185. Ruby Mentorship – connect learners with mentors via ruby profiles
+186. Ruby Classroom – virtual classroom with ruby seating and tools
+187. Ruby Lab Notebook – digital lab notebook for science students
+188. Ruby Experiment – design and log experiments with ruby data viz
+189. Ruby Observation – nature observation journal with ruby entries
+190. Ruby Field Guide – interactive field guides for plants, rocks, animals
+191. Ruby Geology – dedicated geology learning focused on real rubies
+192. Ruby Mineralogy – deep dive into ruby structures and properties
+193. Ruby Earth Science – plate tectonics and earth processes as ruby dynamics
+194. Ruby Space Academy – astronomy and space science curriculum
+195. Ruby Engineering – introductory engineering with ruby materials science
+196. Ruby Architecture – architectural design with ruby structural principles
+197. Ruby Sustainability – environmental science with ruby resource models
+198. Ruby Ethics – ethics scenarios and decision trees as ruby dilemmas
+199. Ruby Psychology – psychology concepts visualized with ruby mind models
+200. Ruby Soft Skills – communication, leadership, and collaboration training
+201. Ruby Career – career exploration and skill mapping as ruby paths
+202. Ruby Interview – interview practice with ruby feedback scoring
+203. Ruby Finance Literacy – personal finance education with ruby money models
+204. Ruby Entrepreneurship – startup and business fundamentals
+205. Ruby Health Education – health and wellness learning modules
+206. Ruby Nutrition – nutrition science with ruby nutrient breakdowns
+207. Ruby Mindfulness – meditation and mindfulness with ruby breathing guides
+208. Ruby Emotional Intelligence – EQ training with ruby emotion maps
+209. Ruby Accessibility – learning tools designed for different learning styles
+210. Ruby Inclusive Education – adaptive learning that adjusts ruby difficulty
+211. Ruby Dock – customizable dock with ruby app icons that glow on hover
+212. Ruby Menu Bar – menu bar with living ruby status indicators
+213. Ruby Notification Center – notifications that appear as floating rubies
+214. Ruby Control Center – quick settings panel made of ruby tiles
+215. Ruby Spotlight – enhanced search that returns results as ruby clusters
+216. Ruby Gestures – custom gesture system that leaves ruby trails
+217. Ruby Hotkeys – visual hotkey trainer with ruby key highlights
+218. Ruby Accessibility – high-contrast ruby themes and screen reader polish
+219. Ruby Night Mode – deep ruby night theme with soft internal glow
+220. Ruby Day Mode – bright, polished daytime ruby theme
+221. Ruby Adaptive Theme – theme that shifts with ambient light and time
+222. Ruby Focus Mode – hides everything except the current ruby workspace
+223. Ruby Zen Mode – extreme minimalism with single floating ruby
+224. Ruby Multi-Monitor – seamless ruby spanning across displays
+225. Ruby Virtual Desktops – each desktop is a different ruby island
+226. Ruby Window Manager – advanced tiling with ruby snap zones
+227. Ruby Tabs – browser and app tabs shaped as ruby cuts
+228. Ruby Split View – split windows with glowing ruby dividers
+229. Ruby Picture-in-Picture – floating ruby video windows
+230. Ruby Clipboard – advanced clipboard history shown as ruby stack
+231. Ruby History – system-wide action history as a ruby timeline
+232. Ruby Undo Universe – powerful multi-level undo with ruby branches
+233. Ruby Search Everywhere – unified search across files, apps, web, AI
+234. Ruby AI Sidebar – persistent AI assistant in a ruby side panel
+235. Ruby Context Menu – right-click menus that feel like opening a ruby
+236. Ruby Drag & Drop – visual ruby “energy” trails while dragging
+237. Ruby File Preview – rich previews that open inside ruby frames
+238. Ruby Quick Look – spacebar quick look with ruby expansion animation
+239. Ruby Compression – visual compression that “cuts” files into smaller rubies
+240. Ruby Encryption Visualizer – shows encryption strength as ruby hardness
+241. Ruby Permission Radar – real-time view of what apps are accessing
+242. Ruby Sandbox Visual – sandboxed apps appear inside protective ruby spheres
+243. Ruby Update Ruby – system updates shown as growing and polishing a central ruby
+244. Ruby Health Dashboard – system health displayed as ruby vitality
+245. Ruby Resource Monitor – CPU/RAM/GPU as living ruby formations
+246. Ruby Network Ruby – network activity visualized as flowing ruby light
+247. Ruby Battery Ruby – battery status as a ruby that slowly loses ruby cuts
+248. Ruby Storage Map – storage usage shown as a 3D ruby cavern
+249. Ruby Privacy Shield – one-click privacy mode that “encases” the system in ruby
+250. Ruby Developer Overlay – always-available developer tools with ruby UI
+251. Ruby Pets – digital pets that live on the desktop and play with rubies
+252. Ruby Garden – grow and tend a virtual ruby garden on the desktop
+253. Ruby Aquarium – peaceful ruby fish tank widget
+254. Ruby Fireplace – animated ruby fireplace ambient mode
+255. Ruby Rain – ambient ruby rain and weather on the desktop
+256. Ruby Stars – night-sky ruby constellation mode
+257. Ruby Music Visualizer – system-wide audio visualizer made of dancing rubies
+258. Ruby Ambience – procedural ambient soundscapes of ruby caves
+259. Ruby ASMR – satisfying ruby cutting, polishing, and chipping sounds
+260. Ruby Achievements – system-wide achievement system with rare ruby badges
+261. Ruby Streaks – daily usage streaks that grow personal rubies
+262. Ruby Leaderboards – optional friendly competition for learning/games
+263. Ruby Social – lightweight social layer for sharing ruby creations
+264. Ruby Share Gallery – public gallery of user-made themes and rubies
+265. Ruby Marketplace – curated store for themes, icons, widgets, and games
+266. Ruby Workshop – create and publish your own ruby widgets
+267. Ruby Theme Studio – advanced theme editor with live ruby preview
+268. Ruby Icon Forge – design custom ruby app icons
+269. Ruby Font Foundry – create fonts with ruby letterforms
+270. Ruby Sound Pack – design system sound effects from ruby samples
+271. Ruby Boot Animations – customizable boot sequences of ruby formation
+272. Ruby Shutdown Ritual – beautiful ruby “dissolving” shutdown animation
+273. Ruby Lock Screen – dynamic lock screens that grow rubies over time
+274. Ruby Login – login screen where you “cut” a ruby to unlock
+275. Ruby Gesture Art – draw ruby patterns with multi-touch gestures
+276. Ruby Physics Desktop – optional physics engine for desktop icons
+277. Ruby Magnetism – icons can magnetically snap into ruby arrangements
+278. Ruby Gravity Well – playful gravity effects on the desktop
+279. Ruby Echo – desktop that softly echoes your actions with light trails
+280. Ruby Memory Palace Mode – turn your entire desktop into a spatial memory system
+281. Ruby Time Capsule – save desktop states as ruby time capsules
+282. Ruby Parallel Universes – experimental multiple simultaneous desktop realities
+283. Ruby Dream Mode – low-power ambient mode that slowly grows random rubies
+284. Ruby Meditation Space – full-screen guided meditation in a ruby temple
+285. Ruby Story Mode – the OS itself tells an ongoing story through ambient events
+286. Ruby Lore – hidden lore and mythology about the Ruby world discoverable in the OS
+287. Ruby Easter Eggs – dozens of hidden ruby interactions and secrets
+288. Ruby Console – secret developer console accessible via special ruby combination
+289. Ruby Debug Ruby – visual debugging tools that look beautiful
+290. Ruby Experiment Lab – sandbox for trying experimental system features
+291. Ruby Beta Channel – opt-in experimental features delivered as new ruby types
+292. Ruby Community Challenges – weekly creative challenges for users
+293. Ruby Creator Fund – optional support system for independent ruby creators
+294. Ruby Accessibility Lab – advanced accessibility experimentation space
+295. Ruby Localization Studio – community-driven translation of the OS into new languages
+296. Ruby Documentation Ruby – living, interactive documentation
+297. Ruby Tutorial World – full guided tour of the OS as an explorable ruby realm
+298. Ruby Onboarding – first-run experience that feels like entering a ruby cave
+299. Ruby Legacy Mode – compatibility layer that still looks and feels ruby-themed
+300. Ruby Future Vision – experimental AR/VR interface concepts for future Ruby OS
+301. Ruby Voice Commands with ruby confirmation chimes
+302. Ruby Keyboard Backlight patterns
+303. Ruby Mouse Trails
+304. Ruby Window Shattering close animation
+305. Ruby App Launch “ignition” effects
+306. Ruby Volume Slider that changes shape
+307. Ruby Brightness as ruby internal light
+308. Ruby Night Light with warm ruby glow
+309. Ruby Do Not Disturb “sealed ruby” mode
+310. Ruby Focus Playlist integration
+
+==================================================
+SKIPPED - 17 ALREADY EXIST IN RubyOS 4.9.15
+==================================================
+These were in the Grok 310 but you already have them, so they are skipped.
+
+1. Ruby Notes – ruby-edged notebooks with ruby tags  [SKIP - Already in RubyOS 4.9.15 as Ruby Notes]
+5. Ruby Calendar – calendar with ruby day markers and “ruby cut” views  [SKIP - Already in RubyOS 4.9.15 as Ruby Calendar]
+8. Ruby Video – video editor with ruby transition effects  [SKIP - Already in RubyOS 4.9.15 as Ruby Video]
+11. Ruby Sheets – spreadsheet with cell rubies that change ruby shade by value (Deep Crimson to Ruby Red)  [SKIP - Already in RubyOS 4.9.15 as Ruby Sheets]
+26. Ruby Weather – weather app with animated ruby precipitation  [SKIP - Already in RubyOS 4.9.15 as Ruby Weather]
+31. Ruby Clock – world clock with floating ruby time zones  [SKIP - Already in RubyOS 4.9.15 as Ruby Clock]
+32. Ruby Calculator – calculator that displays results as polished ruby numbers  [SKIP - Already in RubyOS 4.9.15 as Ruby Calculator]
+41. Ruby Whiteboard – collaborative board with multi-user ruby cursors  [SKIP - Already in RubyOS 4.9.15 as Ruby Whiteboard]
+46. Ruby Docs – collaborative documents with live ruby cursors  [SKIP - Already in RubyOS 4.9.15 as Ruby Docs]
+47. Ruby Forms – form builder that creates ruby-styled input fields  [SKIP - Already in RubyOS 4.9.15 as Ruby Forms]
+63. Ruby Runner – endless runner through ruby caves  [SKIP - Already in RubyOS 4.9.15 as Ruby Runner]
+64. Ruby Mines – minesweeper with ruby tiles that crack open  [SKIP - same job as Minesweeper Ruby]
+67. Ruby Chess – chess with ruby pieces that light up on check  [SKIP - Already in RubyOS 4.9.15 as Ruby Chess]
+71. Ruby Tetris – falling blocks that form larger rubies when cleared  [SKIP - Already in RubyOS 4.9.15 as Ruby Tetris]
+72. Ruby Snake – snake that grows by eating rubies  [SKIP - Already in RubyOS 4.9.15 as Ruby Snake]
+73. Ruby Breaker – brick breaker with ruby bricks that shatter realistically  [SKIP - same job as Breakout Ruby]
+86. Ruby Memory – memory matching with glowing rubies  [SKIP - already have Ruby Memory]
+
+END - Ruby theme only. No other colors.
