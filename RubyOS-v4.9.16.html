@@ -2024,8 +2024,7 @@ function getAppContent(appId){
     <div id="earthFallback" style="display:none;margin-top:12px" class="card"><p class="mute">Map could not load. Tap below to open the same spot in Google Maps, or tap Reload Map.</p><div class="row" style="margin-top:8px"><button class="btn primary" onclick="earthOpenGoogle()">Open in Google Maps</button><button class="btn" onclick="earthRetry()">Retry</button></div></div>
    </div>`;
   case 'messages': return `
-   <div class="card" style="text-align:center;padding:24px 16px">
-    <div style="font-size:44px">🔒</div><h3 style="margin-top:8px">Ruby Messages - Temporarily Closed</h3><p class="mute" style="margin-top:8px;line-height:1.6">Messages is shut down until Wyatt gets the new code in.<br>No messages will send. No fake replies. It will come back when the update is ready.</p><p class="mute" style="margin-top:12px;font-size:12px">If you see this, the update has not been put in yet. Please wait.</p></div><div style="display:none"><div class="card">
+   <div><div class="card">
     <div class="row" style="justify-content:space-between"><h3>Ruby Messages</h3><span>My Number: <b id="msgMyNumber">#1234</b></span></div>
     <div class="row" style="margin-top:8px;flex-wrap:wrap"><input id="msgMyNameInput" class="input" placeholder="Your name - shows to the other person" style="flex:1;min-width:140px"><button class="btn" onclick="rubyMsgSaveName()">Save my name</button></div><div class="row" style="margin-top:8px;flex-wrap:wrap"><input id="msgGithubToken" type="password" class="input" placeholder="GitHub token - needed to send to another person" style="flex:1;min-width:180px"><button class="btn" onclick="rubyMsgSaveToken()">Save token</button></div><div id="msgRelayStatus" class="mute" style="margin-top:6px;font-size:12px">Relay: GitHub ruby-messages.json - checks every 5 seconds. No fake replies anymore.</div><div id="msgCopyBox" style="display:none;margin-top:8px;padding:10px;background:var(--field);border:1px solid var(--line);border-radius:8px"><div class="mute" style="font-size:12px">No token saved, so this message could not be sent to GitHub yet. Copy this and paste it into ruby-messages.json with your bot, or save a token above:</div><textarea id="msgCopyText" class="input" style="width:100%;height:80px;margin-top:6px"></textarea></div><div class="row" style="margin-top:8px;flex-wrap:wrap"><input id="msgMyNumberInput" class="input" placeholder="New number (4+ digits)" style="flex:1;min-width:140px"><button class="btn" onclick="changeMyNumber()">Change my number</button></div>
     <div id="msgHeader" style="margin-top:10px;font-weight:700">Pick a contact to chat</div>
@@ -2068,8 +2067,7 @@ function getAppContent(appId){
     <div id="memoryMsg" class="mute" style="margin-top:10px;text-align:center"></div>
    </div>`;
   case 'phone': return `
-   <div class="card" style="text-align:center;padding:24px 16px">
-    <div style="font-size:44px">🔒</div><h3 style="margin-top:8px">Ruby Phone - Temporarily Closed</h3><p class="mute" style="margin-top:8px;line-height:1.6">Phone is shut down until Wyatt gets the new code in.<br>No calls will go through. No fake Connected. It will come back when the update is ready.</p><p class="mute" style="margin-top:12px;font-size:12px">If you see this, the update has not been put in yet. Please wait.</p></div><div style="display:none"><div class="card">
+   <div><div class="card">
     <div class="row" style="justify-content:space-between"><h3>Ruby Phone</h3><span class="kbd">My Number: <span id="myPhoneNumber">#1234</span></span></div>
     <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap"><input id="phoneMyNumberEdit" class="input" placeholder="New Ruby number (4+ digits)" style="flex:1;min-width:140px"><button class="btn" onclick="changeMyNumberPhone()">Change My Number</button></div>
     <div id="phoneStatus" style="display:none;margin-top:10px;padding:10px;background:var(--field);border:1px solid var(--line);border-radius:8px"><div id="phoneName" style="font-weight:700"></div><div id="phoneStatusText" class="mute" style="font-size:12px"></div></div><div id="phoneIncoming" style="display:none;margin-top:10px;padding:10px;background:#2a060e;border:1px solid #ff1f3d;border-radius:8px"><div id="phoneIncomingText" style="font-weight:700"></div><div class="row" style="margin-top:8px"><button class="btn primary" onclick="rubyCallAccept()">Accept</button><button class="btn" onclick="rubyCallDecline()">Decline</button></div></div><div id="phoneRelayStatus" class="mute" style="font-size:12px;margin-top:8px">Calls go through the same GitHub relay as Messages - the other person sees Ringing and can Accept.</div>
@@ -10167,7 +10165,7 @@ function rubyTerminalSyncFolders(){
 
 <script>
 /* 4.9.16 GitHub Messages + Calls Relay - TEMP SHUTDOWN until Wyatt gets code in */
-var RUBY_MSG_PHONE_SHUTDOWN=true; // true = Messages + Phone are SHUT DOWN, show Closed screen only. Set to false when Wyatt gets the relay code in.
+var RUBY_MSG_PHONE_SHUTDOWN=false; // true = Messages + Phone are SHUT DOWN, show Closed screen only. Set to false when Wyatt gets the relay code in.
 var RUBY_MSG_RELAY_URL='https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/ruby-messages.json';
 var RUBY_MSG_PAGES_URL='https://saturn1880.github.io/ruby-updater/ruby-messages.json';
 var RUBY_MSG_API_URL='https://api.github.com/repos/Saturn1880/ruby-updater/contents/ruby-messages.json';
@@ -10181,7 +10179,7 @@ function rubyMsgFetchRelay(){ var u1=RUBY_MSG_RELAY_URL+(RUBY_MSG_RELAY_URL.inde
 function rubyMsgSaveSeen(){ try{ localStorage.setItem('ruby.msg.seen',JSON.stringify(rubyMsgSeenIds)); }catch(e){} }
 function rubyMsgB64(s){ return btoa(unescape(encodeURIComponent(s))); }
 function rubyMsgPutRelay(data,token){ return fetch(RUBY_MSG_API_URL,{headers:{'Authorization':'token '+token,'Accept':'application/vnd.github.v3+json'}}).then(function(r){ if(!r.ok) throw new Error('GitHub read failed HTTP '+r.status); return r.json(); }).then(function(cur){ var sha=cur.sha||''; var content=rubyMsgB64(JSON.stringify({version:1,updated:new Date().toISOString(),messages:data.messages||[],calls:data.calls||[]},null,2)); return fetch(RUBY_MSG_API_URL,{method:'PUT',headers:{'Authorization':'token '+token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},body:JSON.stringify({message:'RubyOS message '+new Date().toISOString(),content:content,sha:sha})}).then(function(r){ if(!r.ok) return r.json().then(function(j){ throw new Error('GitHub write failed HTTP '+r.status+' - '+(j.message||'')); }); return r.json(); }); }); }
-function rubyMsgPoll(){ if(typeof RUBY_MSG_PHONE_SHUTDOWN!=="undefined" && RUBY_MSG_PHONE_SHUTDOWN) return; } function rubyMsgPoll_OLD(){
+function rubyMsgPoll(){ if(typeof RUBY_MSG_PHONE_SHUTDOWN!=="undefined" && RUBY_MSG_PHONE_SHUTDOWN) return; rubyMsgPoll_OLD(); } function rubyMsgPoll_OLD(){
   var myNum=''; try{ myNum=(typeof myRubyNumber!=='undefined'&&myRubyNumber)?myRubyNumber:(typeof rubyNumber!=='undefined'?rubyNumber:''); }catch(e){}
   if(!myNum) return;
   rubyMsgFetchRelay().then(function(data){
