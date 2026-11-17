@@ -668,7 +668,7 @@ html{
 .task-ruby svg{width:32px !important;height:32px !important}
 #startMenu{max-height:84vh !important;min-height:560px;width:680px}
 #startAllApps{max-height:360px;overflow-y:auto;padding-right:4px}
-div#desktopWeather{cursor:pointer !important}
+div#desktopWeather{cursor:grab !important}
 div#weatherWidget{cursor:pointer !important}
 #earthMap{height:420px !important;min-height:320px;width:100%;background:#0a0204;position:relative;z-index:1}
 .leaflet-container{background:#0a0204}
@@ -727,7 +727,7 @@ div#weatherWidget{cursor:pointer !important}
  <div id="desktopIcons"></div>
  <div id="devWatermark" style="display:none;position:absolute;left:0;right:0;top:38%;text-align:center;font:800 44px Segoe UI;color:rgba(255,255,255,.10);pointer-events:none;letter-spacing:2px;z-index:0">Welcome Developer</div>
  <!-- Desktop Weather Widget - Shows current temp on home screen -->
- <div id="desktopWeather" data-weather-zone="1" title="Weather - tap to open Ruby Weather. Windows and icons cannot cover this spot." onclick="openApp('weather')" style="display:none;position:absolute;top:20px;right:20px;background:rgba(26,4,8,.85);backdrop-filter:blur(20px);border:1px solid rgba(255,31,61,.3);border-radius:16px;padding:16px;min-width:210px;box-shadow:0 10px 30px rgba(0,0,0,.5);z-index:2;cursor:pointer">
+ <div id="desktopWeather" data-weather-zone="1" title="Weather widget - tap to open Ruby Weather, drag to move it" style="display:none;touch-action:none;user-select:none;position:absolute;top:20px;right:20px;background:rgba(26,4,8,.85);backdrop-filter:blur(20px);border:1px solid rgba(255,31,61,.3);border-radius:16px;padding:16px;min-width:210px;box-shadow:0 10px 30px rgba(0,0,0,.5);z-index:2;cursor:pointer">
   <div style="font:600 12px Segoe UI;color:#ff8a9b;letter-spacing:1px;text-transform:uppercase">Weather</div>
   <div id="desktopWeatherCity" style="font:400 12px Segoe UI;color:#ff8a9b;margin-top:6px">Where you live - tap to open</div>
   <div style="font:400 10px Segoe UI;color:#c45a6f;margin-top:6px">Current Temperature + Feels Like live inside Ruby Weather</div>
@@ -6592,7 +6592,7 @@ function settingsHTML(){
 </section>
 <section class="rs-p" id="rsP_system">
  <div class="card"><h4>OS Color - changes the whole operating system</h4><div class="mute">Pick a color and the whole OS changes with it - taskbar, buttons, highlights, Start menu. This is not just your profile color.</div><div class="row" id="rsThemeSw" style="margin-top:10px;flex-wrap:wrap"></div><div class="row" style="margin-top:8px"><label class="rs-l" style="margin:0">Custom color</label><input type="color" id="rsThemeCustom" value="#ff1f3d" style="width:44px;height:32px;border-radius:8px;border:1px solid var(--line);cursor:pointer" onchange="rubySetTheme(this.value)"><button class="btn" onclick="rubySetTheme('#ff1f3d')">Back to Ruby Red</button></div><div class="rs-m" id="rsM_theme"></div></div>
- <div class="card"><h4>Clock and weather</h4>${tg('clock24','Use 24-hour clock','Taskbar and lock screen')}<div class="rs-r"><span>Temperature unit</span><span class="row"><button class="btn" id="weatherFBtn" onclick="setWeatherUnit('F');rsFill()">Fahrenheit</button><button class="btn" id="weatherCBtn" onclick="setWeatherUnit('C');rsFill()">Celsius</button></span></div>${tg('wx','Show weather on the desktop','The taskbar weather stays on')}</div>
+ <div class="card"><h4>Clock and weather</h4>${tg('clock24','Use 24-hour clock','Taskbar and lock screen')}<div class="rs-r"><span>Temperature unit</span><span class="row"><button class="btn" id="weatherFBtn" onclick="setWeatherUnit('F');rsFill()">Fahrenheit</button><button class="btn" id="weatherCBtn" onclick="setWeatherUnit('C');rsFill()">Celsius</button></span></div>${tg('wx','Show weather widget on the home screen','Off by default. Drag it anywhere to move it, tap it to open Weather. The taskbar weather stays on.')}</div>
  <div class="card"><h4>Behavior</h4>${tg('notify','Show notifications','Message and app alerts')}${tg('bootAnim','Play the startup animation','Off goes straight to the lock screen')}${tg('calm','Reduce motion','Turns off window and boot animations')}</div>
  <div class="card"><h4>Desktop</h4><button class="btn" onclick="resetDesktopIcons()">Reset desktop icon positions</button></div>
  <div class="card"><h4>Ruby Terminal</h4><div class="mute">Root password is kept here in Ruby OS Settings. Change it in the Terminal as root: <span class="kbd">sudo root ruby</span> or <span class="kbd">pseudo root ruby</span> - it asks for the original password, then the new one (max 4 digits). Old way still works: <span class="kbd">sudo ruby root password set 1234</span></div><div class="row" style="margin-top:8px"><button class="btn" onclick="rubyTerminalResetRootPw()">Reset root password to Ruby3191</button><button class="btn" onclick="openApp('terminal')">Open Terminal</button></div><div class="mute" id="rsTerminalPw" style="margin-top:6px">Root password: default (Ruby3191).</div></div>
@@ -6675,7 +6675,7 @@ function applyRubySettings(){
  }catch(e){}
  let st=rs$('rsMotionCSS');const calm=Store.get('ruby.motion.off',false) || (rubyIsDev() && Store.get('ruby.dev.animations',true)===false);
  if(calm&&!st){st=document.createElement('style');st.id='rsMotionCSS';st.textContent='*,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.001s!important}';document.head.appendChild(st)}else if(!calm&&st)st.remove();
- const w=rs$('desktopWeather');if(w)w.style.display=localStorage.getItem('ruby.weather.hidden')==='1'?'none':'';
+ const w=rs$('desktopWeather');if(w){w.style.display=localStorage.getItem('ruby.weather.hidden')==='0'?'':'none';try{if(window.rubyWeatherRestorePos)window.rubyWeatherRestorePos()}catch(e){}} /* 4.9.16: weather widget is OFF by default - turn on in Settings */
  refreshLock();try{updateLockTime()}catch(e){}
 }
 function rsToggle(k,on){
@@ -6719,7 +6719,7 @@ function rsFill(){
  if(rs$('setOldPass'))rs$('setOldPass').style.display=pw===''?'none':'';
  if(rs$('rsRm'))rs$('rsRm').disabled=pw==='';
  if(rs$('rsPwState'))rs$('rsPwState').textContent=pw===''?'No password. Ruby opens without one.':pw==='1234'?'Using the default password (1234). Change it below.':'A password is set.';
- const T={clock24:Store.get('ruby.clock24',false),notify:Store.get('ruby.notify',true)!==false,bootAnim:!Store.get('ruby.boot.skip',false),calm:Store.get('ruby.motion.off',false),wx:localStorage.getItem('ruby.weather.hidden')!=='1'};
+ const T={clock24:Store.get('ruby.clock24',false),notify:Store.get('ruby.notify',true)!==false,bootAnim:!Store.get('ruby.boot.skip',false),calm:Store.get('ruby.motion.off',false),wx:localStorage.getItem('ruby.weather.hidden')==='0'};
  Object.keys(T).forEach(k=>{const e=rs$('rsT_'+k);if(e)e.checked=!!T[k]});
  const u=Store.get('ruby.weather.unit','F');if(rs$('weatherFBtn')){rs$('weatherFBtn').classList.toggle('primary',u==='F');rs$('weatherCBtn').classList.toggle('primary',u==='C')}
  let b=0;for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);b+=(k.length+(localStorage.getItem(k)||'').length)*2}
@@ -7807,7 +7807,7 @@ window.addEventListener('resize', ()=>{
 // For mobile, auto-hide desktop weather if it covers icons, keep only taskbar weather
 if(window.innerWidth <= 768){
   setTimeout(()=>{
-    const weatherEl = document.querySelector('.card:has(div:contains("CURRENT WEATHER"))') || document.querySelector('#desktopWeatherWidget');
+    const weatherEl = document.querySelector('#desktopWeatherWidget'); /* 4.9.16: removed invalid :contains() selector that threw on phones */
     // On mobile, if weather covers icons, hide desktop one, keep taskbar one
     try{
       if(!localStorage.getItem('ruby.weather.hidden')){
@@ -8011,6 +8011,7 @@ function rubyResumeUpdatedVersion(){
 /* ---------- Weather zone: windows + icons may never cover the desktop Weather widget ---------- */
 function wxRectsOverlap(a,b){ return !(a.right<b.left||a.left>b.right||a.bottom<b.top||a.top>b.bottom); }
 window.wxWinOverlapsWeather=function(l,tt,w,h){
+  return false; /* 4.9.16: weather is a movable widget now, it never blocks windows */
   var wEl=document.getElementById('desktopWeather');
   if(!wEl||wEl.style.display==='none'||!wEl.offsetParent) return false;
   var wr=wEl.getBoundingClientRect();
@@ -8019,6 +8020,7 @@ window.wxWinOverlapsWeather=function(l,tt,w,h){
   return wxRectsOverlap({left:dr.left+l,top:dr.top+tt,right:dr.left+l+w,bottom:dr.top+tt+h}, wr);
 };
 window.wxIconOverlapsWeather=function(contRect,x,y,w,h){
+  return false; /* 4.9.16: weather is a movable widget now, it never blocks icons */
   var wEl=document.getElementById('desktopWeather');
   if(!wEl||wEl.style.display==='none'||!wEl.offsetParent) return false;
   var wr=wEl.getBoundingClientRect();
@@ -8030,13 +8032,46 @@ window.wxFlashWeather=function(){
   wEl.style.boxShadow='0 0 0 3px #ff1f3d';
   setTimeout(function(){ wEl.style.boxShadow=old; },600);
 };
-/* Pin desktop Weather: the old draggable behaviour is gone - Weather stays put and stays tappable */
+/* 4.9.16: desktop Weather is a movable widget - drag to move (position is saved), tap to open Weather.
+   It no longer blocks windows or icons, and it is OFF by default (Settings > Clock and weather). */
 window.makeWeatherDraggable=function(){
-  var wEl=document.getElementById('desktopWeather');
-  if(wEl){ wEl.style.position='absolute'; wEl.style.top='20px'; wEl.style.right='20px'; wEl.style.left='auto'; wEl.style.bottom='auto'; }
+  var wEl=document.getElementById('desktopWeather'); if(!wEl||wEl.__rubyDrag) return;
+  wEl.__rubyDrag=true;
   document.querySelectorAll('.weather-close').forEach(function(b){ b.remove(); });
-  try{ localStorage.removeItem('ruby.weather.pos'); }catch(e){}
+  wEl.removeAttribute('onclick');
+  wEl.style.position='absolute'; wEl.style.cursor='grab'; wEl.style.touchAction='none'; wEl.style.userSelect='none';
+  function clamp(l,t){
+    var par=wEl.offsetParent||document.body; var pw=par.clientWidth||window.innerWidth, ph=par.clientHeight||window.innerHeight;
+    l=Math.max(0,Math.min(pw-wEl.offsetWidth,l)); t=Math.max(0,Math.min(ph-wEl.offsetHeight-56,t)); return [l,t];
+  }
+  function place(l,t){ var c=clamp(l,t); wEl.style.left=c[0]+'px'; wEl.style.top=c[1]+'px'; wEl.style.right='auto'; wEl.style.bottom='auto'; }
+  function restore(){
+    var pos=null; try{ pos=JSON.parse(localStorage.getItem('ruby.weather.widgetPos')||'null'); }catch(e){}
+    if(pos&&typeof pos.left==='number'){ if(wEl.offsetWidth) place(pos.left,pos.top); else { wEl.style.left=pos.left+'px'; wEl.style.top=pos.top+'px'; wEl.style.right='auto'; wEl.style.bottom='auto'; } }
+  }
+  window.rubyWeatherRestorePos=restore;
+  restore(); setTimeout(restore,300); setTimeout(restore,1500);
+  window.addEventListener('resize',function(){ if(wEl.style.left&&wEl.style.left!=='auto') place(parseInt(wEl.style.left,10)||0,parseInt(wEl.style.top,10)||0); });
+  var start=null, moved=false;
+  wEl.addEventListener('pointerdown',function(e){
+    if(e.button!==undefined&&e.button!==0) return;
+    start={x:e.clientX,y:e.clientY,l:wEl.offsetLeft,t:wEl.offsetTop}; moved=false;
+    try{ wEl.setPointerCapture(e.pointerId); }catch(_){}
+  });
+  wEl.addEventListener('pointermove',function(e){
+    if(!start) return;
+    var dx=e.clientX-start.x, dy=e.clientY-start.y;
+    if(!moved&&Math.abs(dx)+Math.abs(dy)<6) return;
+    moved=true; wEl.style.cursor='grabbing'; place(start.l+dx,start.t+dy);
+  });
+  function end(e){
+    if(!start) return; var wasMoved=moved; start=null; wEl.style.cursor='grab';
+    if(wasMoved){ try{ localStorage.setItem('ruby.weather.widgetPos',JSON.stringify({left:wEl.offsetLeft,top:wEl.offsetTop})); }catch(_){} }
+    else if(e.type==='pointerup'){ try{ openApp('weather'); }catch(_){} }
+  }
+  wEl.addEventListener('pointerup',end); wEl.addEventListener('pointercancel',end);
 };
+try{ if(document.readyState==='complete') window.makeWeatherDraggable(); }catch(e){}
 /* ---------- Weather app rendering ---------- */
 function wxConv(f,unit){ if(unit==='C') return (f-32)*5/9; return f; }
 window.renderWeatherApp=function(){
@@ -9628,7 +9663,7 @@ function wxHideWidgets(){
   try{ Store.set('ruby.weather.widgetsHidden',true); }catch(e){}
 }
 function wxShowWidgets(){
-  const dw=document.getElementById('desktopWeather'); if(dw) dw.style.display='';
+  const dw=document.getElementById('desktopWeather'); if(dw){ dw.style.display=(localStorage.getItem('ruby.weather.hidden')==='0')?'':'none'; try{ if(window.rubyWeatherRestorePos) window.rubyWeatherRestorePos(); }catch(e){} } /* 4.9.16: only shows if turned on in Settings */
   const tw=document.getElementById('weatherWidget'); if(tw) tw.style.display='';
   try{ Store.set('ruby.weather.widgetsHidden',false); }catch(e){}
 }
