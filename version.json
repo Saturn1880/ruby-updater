@@ -1,8 +1,0 @@
-{
-  "version": "4.9.16",
-  "build": "4916",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.16.html",
-  "changelog": [
-    "4.9.16 (Build 4916): TEMP SHUTDOWN - Messages + Phone show Temporarily Closed until Wyatt gets code in. No fake replies, no fake Connected. Messages now go through GitHub ruby-messages.json with name + number + message when re-enabled. Phone sends real call invite through same relay when re-enabled. Ideas cleaned to ruby-only, 17 skipped, 293 kept."
-  ]
-}
