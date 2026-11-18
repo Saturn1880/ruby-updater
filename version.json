@@ -1,1 +1,8 @@
-{"build":"4919","changelog":["4.9.19 (Build 4919): REMOVED Phone + Messages apps - too complicated, will return later. Chess + Checkers difficulties Easy/Medium/Hard/Impossible, Checkers stuck-move fix. VM Manager fixed - no blocked iframe, Windows 11 only + Linux, real ISO picker. Store works without GitHub token. Games in launcher: Timer, Dice, Snake, Memory. Earth/Browser icons fixed, Browser fixed. Calendar holidays. Calculator more decimals. Whiteboard infinite canvas + tools. Weather no location spam. Storage 1 Petabyte. Update popup Yes/No. Red text brighter. Clock menu with sound + Bluetooth + Screen Share. Terminal: sudo CHR background root."],"downloadUrl":"https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.19.html","version":"4.9.19"}
+{
+  "version": "5.9.20",
+  "build": "5920",
+  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.20.html",
+  "changelog": [
+    "5.9.20 (Build 5920): Fixed Settings - all options are clickable again (repaired corrupted embedded app data that was breaking the OS). Removed the duplicate clock/date at the top right of the screen - the taskbar clock at the bottom right stays, and tapping it still opens the clock menu. VM Manager and Ruby Isle work again. Terminal folder sync fixed."
+  ]
+}
