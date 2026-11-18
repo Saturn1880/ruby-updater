@@ -1,8 +1,1 @@
-{
-  "version": "4.9.17",
-  "build": "4917",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.17.html",
-  "changelog": [
-    "4.9.17 (Build 4917): Messages and Phone are back on and linked to the GitHub relay (ruby-messages.json). Desktop weather is now a movable widget - off by default, drag it anywhere, tap it to open Weather, and it no longer covers apps or pushes windows. Fixed a weather error on phone-size screens."
-  ]
-}
+{"build":"4919","changelog":["4.9.19 (Build 4919): REMOVED Phone + Messages apps - too complicated, will return later. Chess + Checkers difficulties Easy/Medium/Hard/Impossible, Checkers stuck-move fix. VM Manager fixed - no blocked iframe, Windows 11 only + Linux, real ISO picker. Store works without GitHub token. Games in launcher: Timer, Dice, Snake, Memory. Earth/Browser icons fixed, Browser fixed. Calendar holidays. Calculator more decimals. Whiteboard infinite canvas + tools. Weather no location spam. Storage 1 Petabyte. Update popup Yes/No. Red text brighter. Clock menu with sound + Bluetooth + Screen Share. Terminal: sudo CHR background root."],"downloadUrl":"https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v4.9.19.html","version":"4.9.19"}
