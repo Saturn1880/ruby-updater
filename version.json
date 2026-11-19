@@ -1,8 +1,1 @@
-{
-  "version": "5.9.20",
-  "build": "5920",
-  "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.20.html",
-  "changelog": [
-    "5.9.20 (Build 5920): Fixed Settings - all options are clickable again (repaired corrupted embedded app data that was breaking the OS). Removed the duplicate clock/date at the top right of the screen - the taskbar clock at the bottom right stays, and tapping it still opens the clock menu. VM Manager and Ruby Isle work again. Terminal folder sync fixed."
-  ]
-}
+{"build":"5921","changelog":["5.9.21 (Build 5921): NEW GAME Ruby Clicker - click the ruby to earn Ruby Points, buy upgrades (Stronger Click and Ruby Auto Clickers starting at 5, 20, 30, 40, 50, 100 points) plus Miners, Factories, Golden Ruby and Ruby Portal. NEW GAME Ruby Surfers - 3-lane endless runner, dodge and jump, collect rubies.","Chess + Checkers Impossible mode is now CHAMPION level - much deeper search, plays like a pro. Includes the Ruby.ai app from your uploaded build."],"downloadUrl":"https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.21.html","version":"5.9.21"}
