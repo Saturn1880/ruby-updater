@@ -839,7 +839,7 @@ function getAppIcon(appId, size=24){
   
   drive: `<svg viewBox="0 0 24 24" width="${s}" height="${s}" fill="none" stroke="${red}" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>`,
   
-  earth: `<svg viewBox="0 0 24 24" width="${s}" height="${s}" fill="none" stroke="${red}" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+  earth: `<svg viewBox="0 0 24 24" width="${s}" height="${s}" fill="none" stroke="${red}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M7.2 3.7c1.6-.4 3.4.2 3.7 1.4.2 1-.7 1.6-1.7 1.9-1 .3-2.2 0-2.6-.9-.3-.8.1-2 0.6-2.4z" fill="${red}" stroke="none"/><path d="M9.1 11.1c1-.4 2 .2 2.2 1.4.2 1.6-.6 4-1.6 5.8-.4.7-1.2.6-1.4-.3-.3-1.7-.2-5.9.8-6.9z" fill="${red}" stroke="none"/><path d="M15.6 9.6c1.5-.3 2.9.5 3.1 1.9.2 1.6-.6 3.8-1.8 5-0.9.8-1.9.4-2.1-.7-.3-1.8-.2-5.5.8-6.2z" fill="${red}" stroke="none"/><path d="M14.9 4.1c1.4-.6 3.2-.2 3.9 1 .5 1-.1 2-1.2 2.3-1.1.3-2.3-.1-2.8-1.1-.3-.8-.4-1.8.1-2.2z" fill="${red}" stroke="none"/></svg>`,
   
   calc: `<svg viewBox="0 0 24 24" width="${s}" height="${s}" fill="none" stroke="${red}" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="16" y1="18" x2="16" y2="18"/><line x1="12" y1="18" x2="12" y2="18"/><line x1="8" y1="18" x2="8" y2="18"/></svg>`,
   
@@ -10936,20 +10936,6 @@ setInterval(function(){
   setInterval(ensureGames,2000);
 })();
 
-/* --- EARTH vs BROWSER ICONS + BROWSER FIX --- */
-(function(){
-  function fixIcons(){
-    try{
-      document.querySelectorAll('[data-app="earth"], [data-id="earth"]').forEach(function(el){ el.textContent='🌍'; });
-      // Browser icon should be compass, Earth should be globe - fix duplicates
-      var apps=document.querySelectorAll('.app-icon, .desktop-icon'); apps.forEach(function(el){
-        var t=(el.textContent||'').trim();
-        if(el.getAttribute('data-app')==='browser' || el.getAttribute('data-id')==='browser'){ if(el.querySelector('.icon')) el.querySelector('.icon').textContent='🧭'; }
-      });
-    }catch(e){}
-  }
-  setInterval(fixIcons,3000);
-})();
 /* Browser fix: if browser iframe fails, show fallback search */
 window.rubyBrowserFix=function(url){
   try{
@@ -11292,20 +11278,6 @@ setInterval(function(){
   setInterval(ensureGames,2000);
 })();
 
-/* --- EARTH vs BROWSER ICONS + BROWSER FIX --- */
-(function(){
-  function fixIcons(){
-    try{
-      document.querySelectorAll('[data-app="earth"], [data-id="earth"]').forEach(function(el){ el.textContent='🌍'; });
-      // Browser icon should be compass, Earth should be globe - fix duplicates
-      var apps=document.querySelectorAll('.app-icon, .desktop-icon'); apps.forEach(function(el){
-        var t=(el.textContent||'').trim();
-        if(el.getAttribute('data-app')==='browser' || el.getAttribute('data-id')==='browser'){ if(el.querySelector('.icon')) el.querySelector('.icon').textContent='🧭'; }
-      });
-    }catch(e){}
-  }
-  setInterval(fixIcons,3000);
-})();
 /* Browser fix: if browser iframe fails, show fallback search */
 window.rubyBrowserFix=function(url){
   try{
@@ -11847,20 +11819,6 @@ setInterval(function(){
   setInterval(ensureGames,2000);
 })();
 
-/* --- EARTH vs BROWSER ICONS + BROWSER FIX --- */
-(function(){
-  function fixIcons(){
-    try{
-      document.querySelectorAll('[data-app="earth"], [data-id="earth"]').forEach(function(el){ el.textContent='🌍'; });
-      // Browser icon should be compass, Earth should be globe - fix duplicates
-      var apps=document.querySelectorAll('.app-icon, .desktop-icon'); apps.forEach(function(el){
-        var t=(el.textContent||'').trim();
-        if(el.getAttribute('data-app')==='browser' || el.getAttribute('data-id')==='browser'){ if(el.querySelector('.icon')) el.querySelector('.icon').textContent='🧭'; }
-      });
-    }catch(e){}
-  }
-  setInterval(fixIcons,3000);
-})();
 /* Browser fix: if browser iframe fails, show fallback search */
 window.rubyBrowserFix=function(url){
   try{
