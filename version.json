@@ -1,9 +1,1 @@
-{
- "build": "5929",
- "changelog": [
-  "5.9.29 (Build 5929): NEW Google Drive update channel - Settings > Ruby Updater now has a 'Get the latest update (Google Drive)' button, and the update popup has a 'Get it from Google Drive' button too. Both open the newest RubyOS file from Google Drive under one link that never changes: download it and open it to update. Works even where GitHub is blocked, like on school Chromebooks.",
-  "Everything else is unchanged: the Yes/No update popup, fast update checking (about 3 seconds), the red roadblock screen with automatic fallback, and Ruby AI stays off until its API key is ready."
- ],
- "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.29.html",
- "version": "5.9.29"
-}
+{"build":"5930","changelog":["5.9.30 (Build 5930): BUG FIX - updates now STICK after you refresh or close RubyOS. Before, the updater forgot to save the new version (a tiny typo meant the save was skipped), so refreshing brought back the old version. Now the new version is saved on your device and loads automatically every time, and if a saved version ever fails to start 3 times it is thrown away and your last working version comes back.","5.9.30: BUG FIX - the update prompt now appears inside RubyOS as a normal RubyOS notification with Yes and No buttons, like every other RubyOS notification. Yes updates RubyOS right inside RubyOS - it no longer opens a page of source code in your browser. No dismisses the notification and that version will not ask again.","Everything else is unchanged: fast update checking (about 3 seconds), the red roadblock screen with automatic fallback, the Google Drive update button, and Ruby AI stays off until its API key is ready."],"downloadUrl":"https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.30.html","version":"5.9.30"}
