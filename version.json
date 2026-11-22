@@ -1,9 +1,9 @@
 {
- "build": "5927",
+ "build": "5928",
  "changelog": [
-  "5.9.27 (Build 5927): App Updates now check a live update file (app-updates.json) in the RubyOS update repo, so new app updates can be published without a whole new RubyOS release. The Store checks that file, shows waiting updates with an Update button, and required updates stop the app from opening until it is updated. Updating takes 30 seconds with a percentage, then the app checks its functions work. First live update: Ruby Notes 1.2 (required) adds a Copy button by the word counter.",
+  "5.9.28 (Build 5928): NEW update popup - when a newer RubyOS is out, RubyOS shows a notification: 'New update available: RubyOS 5.9.28' with Yes / No buttons. Yes starts the update right away; No dismisses it and that version will not nag you again (a newer one still will). Update checking is now FAST: instead of a fixed 60-second wait, RubyOS runs its real checks - core functions, screen pieces, built-in app files, every app, the update server - and finishes as soon as they all pass, about 3 seconds. The red roadblock screen and automatic fallback to your last working version after 3 failed attempts still protect you.",
   "Ruby AI stays off until its API key is ready. Everything else is unchanged."
  ],
- "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.27.html",
- "version": "5.9.27"
+ "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.28.html",
+ "version": "5.9.28"
 }
