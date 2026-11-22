@@ -1,1 +1,9 @@
-{"build":"5925","changelog":["5.9.25 (Build 5925): Ruby AI is disabled for now - the app is hidden from the launcher, desktop and search until its API key is ready. It will return with a new name when the key is sorted.","Everything else is unchanged: movable weather widget, the 1-minute update check screen with update counter, and the red roadblock screen with automatic fallback to your last working version."],"downloadUrl":"https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.25.html","version":"5.9.25"}
+{
+ "build": "5926",
+ "changelog": [
+  "5.9.26 (Build 5926): NEW - App Updates in the Ruby Store. Apps can now update one by one: the Store shows which apps have an update, with an Update button beside the app name, and the app itself also offers the update inside the app. Updating takes 30 seconds with a percentage, then the app runs a check that all its functions work before it finishes. First app update: Ruby Notes 1.1 adds a live word and character counter.",
+  "Ruby AI stays off until its API key is ready. Everything else is unchanged: movable weather widget, the 1-minute update check screen with update counter, and the red roadblock screen with automatic fallback to your last working version."
+ ],
+ "downloadUrl": "https://raw.githubusercontent.com/Saturn1880/ruby-updater/main/RubyOS-v5.9.26.html",
+ "version": "5.9.26"
+}
